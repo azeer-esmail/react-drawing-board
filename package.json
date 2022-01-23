@@ -7,7 +7,7 @@
     "name": "",
     "email": ""
   },
-  "repository": "https://github.com/dilidili/react-drawing-board",
+  "repository": "https://github.com/azeer-esmail/react-drawing-board.git",
   "files": [
     "src",
     "lib",
