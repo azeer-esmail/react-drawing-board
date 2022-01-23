@@ -1,0 +1,96 @@
+@import './theme';
+
+@toolbar-prefix: ~'@{prefix}-toolbar';
+
+.ant-layout-sider-children {
+  .@{toolbar-prefix}-container {
+    flex-direction: column;
+    width: 55px;
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    overflow: auto;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .@{toolbar-prefix}-icon {
+    flex-shrink: 0;
+    width: 100%;
+    height: 50px;
+    margin: 7px 0px;
+    cursor: pointer;
+  }
+
+  .@{toolbar-prefix}-mobile-icon {
+    position: relative;
+    width: 45px;
+    height: 40px;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      background-color: white;
+    }
+
+    svg {
+      margin-left: 5px;
+    }
+  }
+
+  .@{toolbar-prefix}-mobile-container {
+    width: 40px;
+    height: auto;
+    overflow: visible;
+    background: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+}
+
+.@{toolbar-prefix}-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  height: 55px;
+  padding-right: 150px;
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 3px 3px 0px 0px;
+  box-shadow: -3px 0px 13px 0px rgba(0, 0, 0, 0.08);
+}
+
+.@{toolbar-prefix}-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  height: 100%;
+  margin: 0 7px;
+  cursor: pointer;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+    fill: #1890ff;
+  }
+
+  &:hover {
+    background: rgba(238, 238, 238, 1);
+  }
+}
+
+.@{toolbar-prefix}-iconLabel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.@{toolbar-prefix}-activeIcon {
+  background: rgba(238, 238, 238, 1);
+}
+
