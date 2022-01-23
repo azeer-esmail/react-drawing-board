@@ -108,25 +108,17 @@ const useTools = () => {
           marginRight: 'auto',
         },
       },
-      ...(!isMobileDevice
-        ? [
-            {
-              label: '100%',
-              labelThunk: (props: ToolbarProps) => `${~~(props.scale * 100)}%`,
-              icon: ZoomIcon,
-              type: Tool.Zoom,
-            },
-          ]
-        : []),
-      ...(!isMobileDevice
-        ? [
-            {
-              label: 'umi.block.sketch.save',
-              icon: SaveIcon,
-              type: Tool.Save,
-            },
-          ]
-        : []),
+      {
+        label: '100%',
+        labelThunk: (props: ToolbarProps) => `${~~(props.scale * 100)}%`,
+        icon: ZoomIcon,
+        type: Tool.Zoom,
+      },
+      {
+        label: 'umi.block.sketch.save',
+        icon: SaveIcon,
+        type: Tool.Save,
+      },
     ];
   }, [showBackgroundTool]);
 
